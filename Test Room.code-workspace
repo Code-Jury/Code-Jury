@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Web Documents/www.codejury.org"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Test Room"
+	}
+}

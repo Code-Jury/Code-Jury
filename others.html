@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<meta name="description"  content="Learn How to code with html, Css & Javascript. also get to know how to build Android & iOS apps. You will also learn ethical hacking & start working in Big Tech companies"/>
+    <title>Homepage - Codejury</title>
+    <script src="./js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg"/>
+<style>
+  body {
+   margin: 0;
+   box-sizing: border-box;
+   background-color:white;
+   font-family: Arial, Helvetica, sans-serif;
+   overflow-x: hidden;
+   }
+   .codejury-top-bar-icon{
+
+   width: 50px;
+   height: 50px;
+   position: relative;
+   top: 15px;
+   left: -35px
+   }
+
+   /* Style the header */
+   .header {
+   
+   color: aqua;
+   background-color : #051b4b;
+   padding: 1px;
+   text-align: center;
+   }
+   .header ul li {
+   position: block;
+   text-decoration: none;
+   display : inline-flex;
+   list-style : none;
+
+   }
+   .header ul li a { text-decoration: none; }
+
+
+   /* Style the top navigation bar */
+
+
+   .topnav {
+   border: 2px solid rgb(8, 143, 98); border-bottom: 0px;
+   color: white;
+   overflow: hidden;
+   background-color: #051b4b;
+   font-weight: bold;
+   top: 0;
+   position: -webkit-sticky;
+   position: sticky;
+   }
+
+   /* Style the topnav links */
+   .topnav a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   }
+
+   /* Change color on hover */
+   .topnav a:hover {
+   background-color: none;
+   color: aqua;
+   font-weight: bold;
+   cursor: pointer;
+   }
+   .topnav a.active {
+   background-color: #ddd;
+   color: black;
+   font-weight: bold;
+   }
+   
+   .tutorial_images { width: 20%; height: 30%;}
+
+   .search-position {
+   float: right;
+
+   }
+   /* Search bar  rgb(224, 37, 37)*/
+   .search-field {
+   
+   border-radius: 6px;
+   height: 30px;
+   width: 180px;
+   }
+   .search-button {
+   margin-top: 6px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 12px;
+   font-weight: 560;
+   background: rgb(224, 37, 37);
+   color:white;
+   width: 100px;
+   padding: 6px;
+   border-radius: 13px;
+   }
+   .search-button:hover {
+   background: red;
+   cursor: pointer;
+   }
+   /* Style the footer */
+   .footer {
+   /*position: fixed; un movable, while page scrolls*/
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  
+   justify-content: center;
+   align-items: center;
+   background : #051b4b;
+   padding: 5px;
+   color:yellow;
+   }
+   .footer ul li {
+   position: block;
+   text-decoration: none;
+   display : inline-flex;
+   list-style : none;
+   }
+   .footer ul li a {
+   color:white;
+       text-align: left;
+   text-decoration: none;
+   padding: 10px;
+   }
+   .footer ul li a:hover{
+   color:aqua;
+
+   } 
+
+   .copyright {
+   float: right;
+   padding-top: 10px;
+   font-size: 12px;
+   color:yellow;
+   margin-right: 10px;
+
+   }
+   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+   @media (max-width: 600px) {
+   body, .footer {width: 100%; height: auto;}
+   .search-button, .search-field{font-size: 2.5vw; }
+
+   /* .footer ul li {  display: flex; flex-wrap: wrap; flex-direction: column;  justify-content: center; align-content: center;} */
+   .header{font-size: 2.5vw;}
+   .footer {
+   left: 0px;
+   bottom: -120vh;}
+    body {min-height:120vh;}
+   .topnav,  .header,  footer {font-size: 3.5vw; }
+   .copyright {padding-top: 14px;}
+   .codejury-top-bar-icon{width: 40px; height: 40px;   position: relative;top: 12px; left: -35px}
+   }
+</style>
+  </head>
+<body>
+  
+    <header>
+        <div class="header">
+            <ul>
+            <a href="./login.html"><img src="./images/favicon.jpg" alt="This is the official Image Code Jury Programming Academy" class="codejury-top-bar-icon"/></a>
+            <li><h1>CODE JURY</h1></li>
+            </ul>
+        
+        </div>
+    </header>    
+    <div class="topnav">
+        <a href="./@ad/app-design.html">App Design</a>
+        <a href="./@eth/ethical-hacking.html">Ethical Hacking</a>
+        <a href="./@tv/tutorial-videos.html">Tutorial Videos</a>
+        <a href="./@sc/source-codes.html">Source codes</a>
+        <a href="./@pt/programming-videos.html">Programming Tutorials</a>
+    <form class="search-position">
+        <div class="last">
+            <input class="search-field" name="search" type="text" placeholder="Html,Programming,how-to..."/>
+            <button class="search-button" type="button">Search</button>
+        </div>
+    </form>  
+    </div>
+
+    <section class="py-5">
+
+    <div class="body-intro"> 
+        <p id="paragraph">
+            <h2 class="heading">Introduction</h2>
+            Welcome to the official  programming website, built by codejury. Here, we teach you all about programming language, 
+            web development with html and css + JavaScript, with free examples & projects source codes. If you want to learn website
+            development, you can start right here & now. To learn programming step by step, go <a href>HERE.</a>
+            or you can checkout this free course to start building your apps.
+        </p>
+        </br>
+        <p  id="paragraph"><h3 class="heading">A brief explanation of Programming Languages</h3></p>
+        <p>The world is evolving into an era of machines, robots and artificial intelligence, is taking over buying and selling, robots are now used in making of vehicles, trains,
+        they can also be found in the health sector.
+        So, there's a need to become a part of this development, to become a Developer, you have to learn at least a programming language, 
+        and be efficient in it </br> You should be able to write codes that are useful in the society at large,such asa driverless car, an automated drilling machine, self driving bus etc
+        We offer you the opportunity to learn these vital programming language.
+        </p>
+        </br>  
+        <div class="toptenpglanguages">
+            <h3 id="top10">Top  Ten Programming Languages to learn in 2022</h3>
+            <ul>
+                <li>1. Python </li>
+                <li>2. Kotlin (Android app Development) </li>
+                <li>3. Swift (iOS app development) </li>
+                <li>4. Html (content management) </li>
+                <li>5. Css (content management) </li>
+                <li>6. JavaScript (content management) </li>
+                <li>7. C++ </li>
+                <li>8. C# </li>
+                <li>9. JAVA </li>
+                <li>10. PHP </li>
+            
+            </ul>
+        </div>
+    </div>
+       
+        
+    <section>
+        <div class="body-intro">
+            <h3 > How to Code </h3>
+            <p id="paragraph">
+                To start coding on your System / Desktop / Laptop: You start by downloading & installing a text editor. example Notepad++, Sublime 
+                text=editor, VS Code etc... After a successful installation, launch the software and create a new file.
+                Save the file as .html e.g file.html , my-website.html<br> 
+                After doing that, save the file & come bask here to write your first code. Copy & paste the html code... open the folder where you saved
+                the code & double-click on the saved file. <br> you can select any browser of your choice and preview your HTMl file, live on a Web browser.
+            </p>
+        </div>
+        <section>
+            <div >
+                <div class="body-intro">
+                    <h1 id="h11"> HTML TUTORIALS</h1>
+                    <h5 id="h5">Build Websites with Html</h5>
+                    <p>
+                        <h6 id="h6">
+                            Start Learning now for free
+                        </h6>
+                    </p>
+                    <br>
+                    <br>
+                    <img src="./images/asd.png" class="tutorial_images"/>
+                    <h1 id="h1"> CSS TUTORIALS</h1>
+                    <h6>Learn How To Design and Style  Websites with CSS</h6>
+                    <p>
+                        <h6 id="h6">This CSS Course provides you with a detailed & simplified way to learn css.
+                            with over 25 topics to choose from,<wbr> begin your journey now as you learn to style & design
+                            webpage. 
+                            Start Learning now for free
+                            Click Here to Begin
+                        </h6>
+                    </p>
+                    <br>
+                    <br>
+                    <img src="./images/pexels-pixabay-38568.jpg" class="tutorial_images"/>/>
+                    <h1 id="h1">JAVASCRIPT TUTORIALS</h1>
+                    <h6>Build Super Functional Websites with JAVASCRIPT</h6>
+                    <p>
+                        <h6 id="h6">
+                            JavaScript is used to make a website functional & perform special operations independently or dependently.
+                            Start Learning now for free
+                        </h6>
+                    </p> 
+                    <img src="./images/pexels-designecologist-1779487.jpg" class="tutorial_images"/>
+                </div>
+            </div>
+            <div class="body-intro">
+                <h1 id="h11"> LEARN BOOTSTRAP</h1>
+                <h5 id="h5">Build Standard web design templates with BOOTSTRAP</h5>
+                <p>
+                    <h6 id="h6">
+                        BOOTSTRAP  is used to make a website LOOK BETTER. Bootstrap is a framework used for frontend web design.
+                        Start Learning TO USE IT
+                    </h6>
+                </p>
+            </div>
+    
+            <div class="body-intro">
+                <h1 id="h11">PYTHON TUTORIALS</h1>
+                <img src="./images/dark.jpg" class="tutorial_images"/>/>
+    
+                <h5 id="h5">Build Applications, Robots & write automated Scripts with PYTHON</h5>
+                <p>
+                    <h6 id="h6">
+                    PYTHON is used to make websites, System Software, Automate Scripts (Backend ), & also for Data Science, Machine Learning / Artificial Intelligence.
+                        Big Tech companies Like Google, Instagram & PINTEREST make use of python
+                    <br>Start Learning TO USE IT
+                    </h6>
+                </p>
+            </div>
+        </section>
+        
+        
+        <div class="col-2">
+        
+          <h3>Related posts</h3>
+          <p>How to install Python on windows</p>
+          <p>pip is not recognized in my pc </p>
+          <p>What are the uses of python? </p>
+          <p>How to Build apps</p>
+          <br><br><br>
+          <h3>Trending Searches</h3>
+          <p> Python Tutorials</p>
+          <p>How to build Websites with python </p>
+          <p>What are the uses of python? </p>
+          <p>How to build Websites with python </p>
+          <p>How to Build a Responsive Website/p>
+          <li>1. Python </li>
+          <li>2. Kotlin (Android app Development) </li>
+          <li>3. Swift (iOS app development) </li>
+          <li>4. Html (content management) </li>
+          <li>5. Css (content management) </li>
+          <li>6. JavaScript (content management) </li>
+          <li>7. C++ </li>
+          <li>8. C# </li>
+          <li>9. JAVA </li>
+          <li>10. PHP </li>
+          <li>How to install vs code on windows</li>
+          <h3>Related posts</h3>
+          <p>How to install Python on windows</p>
+          <p>pip is not recognized in my pc </p>
+          <p>What are the uses of python? </p>
+          <p>How to Build apps</p>
+          <br><br><br>
+          <h3>Trending Searches</h3>
+          <p> Python Tutorials</p>
+          <p>How to build Websites with python </p>
+          <p>What are the uses of python? </p>
+          <p>How to build Websites with python </p>
+          <p>How to Build a Responsive Website</p>
+          </p>
+          </p>
+          </div>
+                        
+        </div>
+    </section><!-- Start: Footer Multi Column -->
+    <p><a href="./main2.html" style="text-decoration: none; color: yellow; ">Return to Homepage</a></p>
+    
+    <footer>    
+        <div class="footer">
+            <ul>
+                <li><a href="./about-us.html"><i></i>About Us</a></li>
+                <li><a href="./faq.html" >FaQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="./terms.html" >Terms of Use </a></li>
+                <li><a href="./privacy.html">Privacy Statement</a></li> 
+                <b class="copyright">© GSI STUDIOS INT'L 2023</b>   
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

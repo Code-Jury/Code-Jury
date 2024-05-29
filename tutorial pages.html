@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<meta name="description"  content="Learn How to code with html, Css & Javascript. also get to know how to build Android & iOS apps. You will also learn ethical hacking & start working in Big Tech companies"/>
+    <title>Prototype</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.jpg"/>
+<style>
+  
+	body {
+		overflow-x: hidden;
+		margin: 0;
+		box-sizing: border-box;
+		background-color: white;
+		color:rgb(10, 11, 20);
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.codejury-top-bar-icon{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 15px;
+	left: -35px
+	}
+
+	/* Style the header */
+	.header {
+	
+		color: aqua;
+		background-color : #051b4b;
+		padding: 1px;
+		text-align: center;
+		
+	}
+
+	.header ul li {
+	position: block;
+	text-decoration: none;
+	display : inline-flex;
+	list-style : none;
+
+	}
+	.header ul li a { text-decoration: none; }
+	.glow:hover{
+	cursor:pointer;
+	}
+
+	.chimney {
+		background-color: white;
+		height: 28px; width: 28px; 
+		padding: 3px;
+		border-radius: 15px;
+	}
+	/* Style the top navigation bar */
+	.navbar {
+	/*position: -webkit-sticky;
+	position: sticky;*/
+	color: white;
+	font-weight: bold;
+	overflow: hidden;
+	background-color: #0f0e0e;
+	
+	} 
+	/* Style the topnav links */
+	.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+	.subnav {
+		float: left;
+		overflow: hidden;
+	}
+	 .subnavbtn {
+	font-size: 16px; 
+	font-weight: bold;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 24px 16px;
+	background-color:#0f0e0e;
+	margin: 0;
+	}
+	.subnav:hover .subnavbtn {
+	/*background-color: #ddd;*/
+	color: aqua;
+	font-weight: bold;
+	cursor: pointer;
+	}
+	.subnav-content {
+	font-size: 14px; 
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: rgb(30, 26, 49);
+	width: 100%;
+	z-index: 1;
+	}
+	.subnav-content a {
+		float: left;
+		color: white;
+		text-decoration: none;
+	
+	}
+	.subnav-content a:hover {
+		background-color: #069c1f;
+		color: rgb(250, 250, 250);
+	}
+	
+
+	.search-position {
+	float: right;
+
+	}
+	/* Search bar  rgb(224, 37, 37)*/
+	.search-field {
+	
+	border-radius: 6px;
+	height: 30px;
+	width: 180px;
+	}
+	.search-button {
+	margin-top: 10px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 15px;
+	font-weight: 300;
+	background: rgb(194, 10, 10);
+	color:white;
+	width: 100px;
+	padding: 8px;
+	border-radius: 13px;
+	}
+	.search-button:hover {
+	background: rgb(248, 9, 9);
+	cursor: pointer;
+	}
+  .show {display: flex;}
+   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 700px) {
+	 .col-1, .col-2, .col-9, .footer { width: 100%; border-left: 0px; border-right: 0px;}
+	 .col-1 {position: static;  background-color: white;
+	  color: black;overflow-y:hidden; overflow-x:hidden;} 
+	 .col-9 {margin-left: 0%;}
+	.navbar {  position: absolute;}
+	 body {width: 100%; height: auto;}
+	 .search-button, .search-field{font-size: 2.5vw; }
+	 .tutorial_images { width:110%; height: 100%;}
+	 /* .footer ul li {  display: flex; flex-wrap: wrap; flex-direction: column;  justify-content: center; align-content: center;} */
+	 .header{font-size: 2.5vw;}
+	 .footer {
+	 left: 0px;
+	 bottom: 0vh;}
+	  body {min-height:120vh;}
+	 .topnav,  .header,  footer {font-size: 3.5vw; }
+	 .copyright {margin-top: -6px; }
+	 .codejury-top-bar-icon{width: 40px; height: 40px;   position: relative;top: 12px; left: -35px}
+   /*.footer ul li {  display: flex; flex-wrap: wrap; flex-direction: column;  justify-content: center; align-content: center;}
+	.copyright {padding-top: 4px;}*/
+	}
+  /* For mobile phones:
+  [class*="col-"] {
+	width: 100%;
+  } */
+</style>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <ul>
+        <a href="./login.html"><img src="./images/favicon.jpg" alt="This is the official Image Code Jury Programming Academy" class="codejury-top-bar-icon"/></a>
+        <li class="glow"><h1 class="h">CODE JURY</h1></li>
+       </ul>
+    
+    </div>
+</header>    
+  <div class="navbar">
+    <a href="index.html"><img src="./images/house-chimney.svg" class="chimney" alt="Homepage image"/></a>
+
+    <div class="subnav">
+      <button   onclick="myFunction()"  class="subnavbtn">Website Design<i class="fa fa-caret-down"></i></button>
+      <div ​id="myDropdown" class="subnav-content">
+            <a href="#">Front-end Design</a>
+            <a href="#">Front-end Design</a>
+            <a href="#">Debugging & Testing</a>
+            <a href="#">Website Deployment </a>
+            <a href="#">Website Maintenance </a>
+      </div>
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.subnavbtn')) {
+            var dropdowns = document.getElementsByClassName("subnav-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+    </div>
+    <div class="subnav">
+      <button  class="subnavbtn">App Development<i class="fa fa-caret-down"></i></button>
+      <div ​id="myDropdown" class="subnav-content">
+          <a href="#">Flutter App Development</a>
+          <a href="#">Kotlin App  Development</a>
+          <a href="#">C# App  Development</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Programming Languages<i class="fa fa-caret-down"></i></button>
+      <div ​id="myDropdown" class="subnav-content">
+        <a href="#">Python</a>
+        <a href="#">JavaScript</a>
+        <a href="#">C++</a>
+        <a href="#">C#</a>
+        <a href="#">Java</a>
+        <a href="#">Kotlin</a>
+        <a href="#">PHP</a>
+        <a href="#">Swift (iOS)</a>
+        <a href="#">Dart</a>
+        <a href="#">Ruby</a>
+        <a href="#">Typesript</a>
+        <a href="#">Scala</a>
+        <a href="#">GO</a>
+        <a href="#">SQL</a>
+        <a href="#">Perl</a>
+        <a href="#">MATLAB</a>
+            
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Robotics & A.I <i class="fa fa-caret-down"></i></button>
+      <div ​id="myDropdown" class="subnav-content" >
+        <a href="#">Machine Learning</a>
+        <a href="#">Deep Learning</a>
+        <a href="#">Data Analysis</a> 
+      </div>
+    </div>
+
+    <div class="subnav">
+      <button class="subnavbtn">Source codes<i class="fa fa-caret-down"></i></button>
+      <div ​id="myDropdown" class="subnav-content">
+            <a href="#">Html Source Codes</a>
+            <a href="#">Css Source Codes</a>
+            <a href="#">Javascript Source Codes</a>
+            <a href="#">Python Source Codes</a>
+            <a href="#">C++ Source Codes</a>
+            <a href="#">Git-Hub </a>
+            <a href="#">Stack Overflow</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Tutorial Videos<i class="fa fa-caret-down"></i></button>
+      <div ​id="myDropdown" class="subnav-content">
+        <a href="#">Html Tutorial Videos</a>
+        <a href="#">CSS Tutorial Videos</a>
+        <a href="#">JavaScript Tutorial Videos</a>
+        <a href="#">Python Tutorial Videos</a>
+        <a href="#">C++ Tutorial Videos</a> 
+      </div>
+    </div>
+    
+    <form class="search-position">
+        <div class="last">
+            <input class="search-field" name="search" type="text" placeholder="Html,Programming,how-to..."/>
+            <button class="search-button" type="button">Search</button>
+        </div>
+    </form>  
+  </div>
+
+
+
+
+  <div class="mb-3"><a href="./login.html"><button class="login-button" type="submit">Log in</button></a></div>
+  <div class="mb-3"><a href="./signup.html"><button class="login-button"  type="submit">Sign Up</button></a></div>
+
+
+</body>
+</html>

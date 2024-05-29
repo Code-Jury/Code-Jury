@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Official</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color:white;
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+.codejury-top-bar-icon{
+
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 15px;
+  left: -35px
+}
+
+/* Style the header */
+.header {
+ 
+ color: aqua;
+ background-color : #051b4b;
+ padding: 1px;
+ text-align: center;
+}
+.header ul li {
+  position: block;
+	text-decoration: none;
+  display : inline-flex;
+  list-style : none;
+
+}
+.header ul li a { text-decoration: none; }
+
+
+/* Style the top navigation bar */
+
+
+.topnav {
+ border: 2px solid rgb(8, 143, 98); border-bottom: 0px;
+ color: white;
+ overflow: hidden;
+ background-color: #051b4b;
+ position: -webkit-sticky;
+ position: sticky;
+ top: 0;
+}
+
+/* Style the topnav links */
+.topnav a {
+ float: left;
+ display: block;
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+ background-color: #ddd;
+ color: black;
+ font-weight: bold;
+ cursor: pointer;
+}
+
+.search-position {
+ float: right;
+
+}
+/* Search bar  rgb(224, 37, 37)*/
+.search-field {
+  
+  border-radius: 6px;
+  height: 30px;
+  width: 180px;
+}
+.search-button {
+  margin-top: 6px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 560;
+  background: rgb(224, 37, 37);
+  color:white;
+  width: 100px;
+  padding: 6px;
+  border-radius: 13px;
+}
+.search-button:hover {
+  background: red;
+  cursor: pointer;
+}
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+/* Style the footer */
+.footer {
+  margin-top: 1000px;
+  justify-content: center;
+  align-items: center;
+  background : #051b4b;
+  padding: 5px;
+
+  color:yellow;
+}
+.footer ul li {
+   position: block;
+	text-decoration: none;
+   display : inline-flex;
+   list-style : none;
+}
+.footer ul li a {
+   color:white;
+     text-align: left;
+   text-decoration: none;
+   padding: 10px;
+}
+.footer ul li a:hover{
+   color:aqua;
+
+} 
+
+.copyright {
+  float: right;
+  padding-top: 8px;
+  font-size: 12px;
+  color:yellow;
+
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  .footer ul li {  display: flex; flex-wrap: wrap; flex-direction: column;  justify-content: center; align-content: center;}
+  
+.copyright {padding-top: 4px;}
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="header">
+      <ul>
+        <a href="./login.html"><img src="./images/favicon.jpg" alt="This is the official Image Code Jury Programming Academy" class="codejury-top-bar-icon"/></a>
+        <li><h1>CODE JURY</h1></li>
+       </ul>
+    
+    </div>
+  </header>
+  
+  <div class="topnav">
+    <a href="#">App Design</a>
+    <a href="#">Ethical Hacking</a>
+    <a href="#">Tutorial Videos</a>
+    <a href="#">Source codes</a>
+    <a href="#">Programming Tutorials</a>
+    <form class="search-position">
+      <div class="last">
+          <input class="search-field" name="search" type="text" placeholder="Html,Programming,how-to..."/>
+          <button class="search-button" type="button">Search</button>
+      </div>
+  </form>  
+  </div>
+  
+  <h3>Toggle Darkmode</h3>
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
+  
+<p style="margin-top: 30px;"> Welcome tothe official website of programming.</p>
+
+<footer>  
+<div class="footer">
+    <ul>
+        <li><a href="./about-us.html"><i></i>About Us</a></li>
+        <li><a href="./faq.html" >FaQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="./terms.html" >Terms of Use </a></li>
+        <li><a href="./privacy.html">Privacy Statement</a></li> 
+        <b class="copyright">© GSI STUDIOS INT'L 2023</b>   
+    </ul>
+</div>
+</footer>
+
+</body>
+</html>

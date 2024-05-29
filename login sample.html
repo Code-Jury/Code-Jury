@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Log in - CodeJury</title>
+   <style>
+        body {
+        margin: 0;
+        box-sizing: border-box;
+        background-color:rgb(42, 40, 63);
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .codejury-top-bar-icon{
+
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 15px;
+        left: -35px
+        }
+
+        /* Style the header */
+        .header {
+        
+        color: aqua;
+        background-color : #051b4b;
+        padding: 1px;
+        text-align: center;
+        }
+        .header ul li {
+        position: block;
+        text-decoration: none;
+        display : inline-flex;
+        list-style : none;
+
+        }
+        .header ul li a { text-decoration: none; }
+
+
+        /* Style the top navigation bar */
+
+
+        .topnav {
+        border: 2px solid rgb(8, 143, 98); border-bottom: 0px;
+        color: white;
+        overflow: hidden;
+        background-color: #051b4b;
+        font-weight: bold;
+        top: 0;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+        background-color: none;
+        color: aqua;
+        font-weight: bold;
+        cursor: pointer;
+        }
+        .topnav a.active {
+        background-color: #ddd;
+        color: black;
+        font-weight: bold;
+        }
+        
+
+
+        .search-position {
+        float: right;
+
+        }
+        /* Search bar  rgb(224, 37, 37)*/
+        .search-field {
+        
+        border-radius: 6px;
+        height: 30px;
+        width: 180px;
+        }
+        .search-button {
+        margin-top: 6px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        font-weight: 560;
+        background: rgb(224, 37, 37);
+        color:white;
+        width: 100px;
+        padding: 6px;
+        border-radius: 13px;
+        }
+        .search-button:hover {
+        background: red;
+        cursor: pointer;
+        }
+
+        .py-5 {
+           
+            text-align: center;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        }
+        .container-py-5 {
+    
+            background-color: rgb(255, 255, 255);
+            border-radius: 40px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  margin-top: 0px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: flex;}
+
+
+
+
+
+
+        /* Style the footer */
+        .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+       
+        justify-content: center;
+        align-items: center;
+        background : #051b4b;
+        padding: 5px;
+        color:yellow;
+        }
+        .footer ul li {
+        position: block;
+        text-decoration: none;
+        display : inline-flex;
+        list-style : none;
+        }
+        .footer ul li a {
+        color:white;
+            text-align: left;
+        text-decoration: none;
+        padding: 10px;
+        }
+        .footer ul li a:hover{
+        color:aqua;
+
+        } 
+
+        .copyright {
+        float: right;
+        padding-top: 10px;
+        font-size: 12px;
+        color:yellow;
+        margin-right: 7px;
+
+        }
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+        body, .footer {width: 100%; height: auto;}
+        .search-button, .search-field{font-size: 2.5vw; }
+ 
+        /* .footer ul li {  display: flex; flex-wrap: wrap; flex-direction: column;  justify-content: center; align-content: center;} */
+        .header{font-size: 2.5vw;}
+        .footer {
+        left: 0px;
+        bottom: -120vh;}
+			body {min-height:120vh;}
+        .topnav,  .header,  footer {font-size: 3.5vw; }
+        .copyright {padding-top: 14px;}
+        .codejury-top-bar-icon{width: 40px; height: 40px;   position: relative;top: 12px; left: -35px}
+        }
+   </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+          <ul>
+            <a href="./login.html"><img src="./images/favicon.jpg" alt="This is the official Image Code Jury Programming Academy" class="codejury-top-bar-icon"/></a>
+            <li><h1>CODE JURY</h1></li>
+           </ul>
+        
+        </div>
+    </header>    
+    <div class="topnav">
+        <a onclick="myFunction()" class="dropbtn" href="#">App Design</a>
+        <a href="./@eth/ethical-hacking.html">Ethical Hacking</a>
+        <a href="./@tv/tutorial-videos.html">Tutorial Videos</a>
+        <a href="./@sc/source-codes.html">Source codes</a>
+        <a href="./@pt/programming-videos.html">Programming Tutorials</a>
+       
+          
+    <form class="search-position">
+        <div class="last">
+            <input class="search-field" name="search" type="text" placeholder="Html,Programming,how-to..."/>
+            <button class="search-button" type="button">Search</button>
+        </div>
+    </form>  
+    </div>
+    <div class="dropdown">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      
+      <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+    <section class="py-5">
+        <div class="container-py-5">
+            <div class="row mb-4 mb-lg-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2">Login</p>
+                    <h2 class="fw-bold">Welcome back</h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-xl-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="bs-icon-xl bs-icon-circle bs-icon-primary shadow bs-icon my-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+                                </svg></div>
+                            <form method="post">
+                                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                                <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                                <div class="mb-3"><button class="login-btn" input type="submit">Log in</button></div>
+                                <p class="text-muted">Forgot your password?</p> 
+                                <p class="text-muted">Dont have an account? <a href="./signup.html">Sign Up Now</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Start: Footer Multi Column -->
+<p><a href="./main2.html" style="text-decoration: none; color: yellow; ">Return to Homepage</a></p>
+
+
+<footer>
+    <div class="footer">
+        <ul>
+            <li><a href="./about-us.html"><i></i>About Us</a></li>
+            <li><a href="./faq.html" >FaQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="./terms.html" >Terms of Use </a></li>
+            <li><a href="./privacy.html">Privacy Statement</a></li> 
+            <b class="copyright">© GSI STUDIOS INT'L 2023</b>   
+        </ul>
+    </div>
+</footer>
+        
+</html>

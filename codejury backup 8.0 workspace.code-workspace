@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Codejury Backup 5.0 -"
+		},
+		{
+			"path": "../E-Commerce - SHOPitALL"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "codejury backup 8.0 resp login",
+		"git.ignoreLimitWarning": true
+	}
+}
